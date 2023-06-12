@@ -596,10 +596,6 @@ const items = [];
     items.push(galleryLink);
 });
 gallery.append(...items);
-new (0, _simplelightboxDefault.default)(".gallery a", {
-    captionDelay: 250,
-    captionsData: "alt"
-});
 
 },{"./gallery-items.js":"9C7dK","simplelightbox/dist/simple-lightbox.min.css":"kaxSc","simplelightbox":"9ydBq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"9C7dK":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");

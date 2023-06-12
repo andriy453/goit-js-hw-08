@@ -582,11 +582,11 @@ const CURRENT_TIME = "videoplayer-current-time";
 const player = new Vimeo.Player(iframe);
 player.on("timeupdate", (0, _lodashThrottleDefault.default)(onPlay, 1000));
 function onPlay(data) {
-    localStorage.setItem("CURRENT_TIME", JSON.stringify(data));
+    localStorage.setItem(CURRENT_TIME, JSON.stringify(data));
 }
-const localStorageGet = localStorage.getItem("CURRENT_TIME");
+const localStorageGet = localStorage.getItem(CURRENT_TIME);
 const pars = JSON.parse(localStorageGet);
-player.setCurrentTime(pars.seconds);
+if (localStorageGet) player.setCurrentTime(pars.seconds);
 
 },{"lodash.throttle":"bGJVT","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"bGJVT":[function(require,module,exports) {
 /**

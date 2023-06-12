@@ -22,7 +22,3 @@ galleryItems.map((e) => {
 });
 gallery.append(...items);
 
-new SimpleLightbox(".gallery a", {
-  captionDelay: 250,
-  captionsData: "alt",
-});
